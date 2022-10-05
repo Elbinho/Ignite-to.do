@@ -16,7 +16,6 @@ export function Home() {
     }
 
     setTasks(oldTask => [...oldTask, newTask]);
-
   }
 
   function handleToggleTaskDone(id: number) {
@@ -33,7 +32,6 @@ export function Home() {
   }
 
   function handleRemoveTask(id: number) {
-    //TODO - remove task from state
     const updateTask = tasks.filter(task => task.id !== id);
 
     setTasks(updateTask);
